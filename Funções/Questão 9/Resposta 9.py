@@ -1,0 +1,23 @@
+def print_rectangl(a,b,c):
+    w="x".ljust(a-2)
+    print(a)
+    print("x"*a)
+    print(w,"x")
+    print(w,"x")
+    print("x"*a)
+    y="x".ljust(b-2)
+    print(b)
+    print("x"*b)
+    print(y,"x")
+    print(y,"x")
+    print("x"*b)
+    z="x".ljust(c-2)
+    print(c)
+    print("x"*c)
+    print(z,"x")
+    print(z,"x")
+    print("x"*c)
+     
+a,b,c=map(int,input().split())
+print_rectangl(a,b,c)
+    
