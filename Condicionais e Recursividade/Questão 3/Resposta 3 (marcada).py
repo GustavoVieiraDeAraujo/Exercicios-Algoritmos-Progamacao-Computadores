@@ -4,7 +4,7 @@ a=int(x)
 b=int(y)
 c=int(z)
 
-if c==0 and a>350: 
+if c==0 and a>=350:
     valorParcela=a/b
     valorDoDesconto=a%b
     valorAPagar=a-valorDoDesconto
