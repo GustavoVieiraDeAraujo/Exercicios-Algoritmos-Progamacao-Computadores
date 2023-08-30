@@ -8,4 +8,4 @@ G = C+B
 H = A+C
 I = D*F+E*G
 
-print(D*F+E*G+H*I)
+print(H*I)
