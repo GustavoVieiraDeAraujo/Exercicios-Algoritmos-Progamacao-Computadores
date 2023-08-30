@@ -1,4 +1,4 @@
-def print_rectangl(a,b,c):
+def print_rectangle(a,b,c):
     w="x".ljust(a-2)
     print(a)
     print("x"*a)
@@ -19,5 +19,5 @@ def print_rectangl(a,b,c):
     print("x"*c)
      
 a,b,c=map(int,input().split())
-print_rectangl(a,b,c)
+print_rectangle(a,b,c)
     
