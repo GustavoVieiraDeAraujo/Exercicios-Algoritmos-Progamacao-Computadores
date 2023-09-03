@@ -26,10 +26,10 @@ while perguntas>0:
             if y in chave:
                 print(chave[0])
                 contador+= 1
-                perguntas-=1
                 break
         if contador == 0:
             print("-1")
+        perguntas-=1
         
 
 
