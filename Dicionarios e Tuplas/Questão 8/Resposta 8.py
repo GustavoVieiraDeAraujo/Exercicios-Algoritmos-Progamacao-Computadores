@@ -1,9 +1,9 @@
 def fibonacci(num):
     arr = [0, 1]
     if num == 1:
-        print('0')
+        return [0]
     elif num == 2:
-        print('[0,', '1]')
+        return [0, 1]
     else:
         while(len(arr) < num):
             arr.append(0)
