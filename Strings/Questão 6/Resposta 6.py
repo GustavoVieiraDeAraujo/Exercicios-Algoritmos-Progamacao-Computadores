@@ -6,7 +6,7 @@ if any(x.isupper() for x in senha):
             if len(senha)>=6 and len(senha)<=32:
                 if any(x.isspace() for x in senha):
                     print("Senha invalida.")
-                elif senha.isalnum():
+                elif senha.isalnum() and senha.isascii():
                     print("Senha valida.")
                 else:
                     print("Senha invalida.")
