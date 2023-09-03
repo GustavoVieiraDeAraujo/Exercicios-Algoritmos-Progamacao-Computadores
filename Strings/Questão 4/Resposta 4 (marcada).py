@@ -3,3 +3,4 @@ def tem_letra_maiúscula(string):
         if caractere.isupper():
             return True
             break
+    return False
