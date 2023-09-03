@@ -9,7 +9,7 @@ if x < 0:
         numero = numero // 10
     print(-inverso)
 
-if x>0:
+if x>=0:
     numero = x
     while(numero != 0):
          temp = numero % 10
