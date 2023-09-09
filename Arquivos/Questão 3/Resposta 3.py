@@ -3,7 +3,7 @@ dicionarioDoPrato = {}
 
 with open("cardapio.txt") as file:
     for line in file:
-        if prato in line.lower().replace("\n", ""):
+        if prato.lower() in line.lower().replace("\n", ""):
             dicionarioDoPrato[line.replace("\n", "").split("/")[0]] = line.replace("\n", "").split("/")[1]
 if len(dicionarioDoPrato) == 0:
     print("Infelizmente não temos este prato")
