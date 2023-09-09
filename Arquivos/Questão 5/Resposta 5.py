@@ -30,7 +30,7 @@ with open(filename, 'r', encoding='latin_1', newline='') as file:
         if row[4] == "555":
             cont += 1
             soma += float(row[5].replace(",","."))
-        if curso in licenciatura and row[10] == 'A' or row[10] == 'B':
+        if curso in licenciatura and (row[10] == 'A' or row[10] == 'B'):
             soma_prof += 1
     media = soma / cont
     media_idade = soma_idade/total
@@ -40,7 +40,7 @@ with open(filename, 'r', encoding='latin_1', newline='') as file:
     print(f'Total de alunos inscritos: {total}')
     print(f'Total de alunos que realizaram o Enade: {cont}')
     print(f'Média da idade dos alunos inscritos no ENADE: {media_idade:.2f}')
-    if soma_prof > 0:
+    if curso in licenciatura:
         print(f'Total de alunos da licenciatura que pretendem ser professor: {soma_prof}')
     print(f'Média geral dos alunos que realizaram o ENADE: {media:.2f}')
         
