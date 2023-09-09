@@ -5,7 +5,8 @@ listaJogadores.sort()
 x = quantJogadores - 11
 titulares = listaJogadores[x:quantJogadores]
 pontosTitulares = sum(titulares)
-reservas = listaJogadores[:x]
+y = max(x - 11, 0)
+reservas = listaJogadores[y:x]
 pontosReservas = sum(reservas)
 
 diferenca = pontosTitulares - pontosReservas
