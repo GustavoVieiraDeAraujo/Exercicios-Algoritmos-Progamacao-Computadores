@@ -12,6 +12,7 @@ def mediana_e_mais_proximo_media_e_pos(lista_1):
         media = somador/tam
         delta = lista[tam-1] - lista[0]
         prox_media = lista[0]
+        posicao = lista_1.index(lista[0])
         for i in lista:
             if abs(media-i) < delta:
                 prox_media = i
