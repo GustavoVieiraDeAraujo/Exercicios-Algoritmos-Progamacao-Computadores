@@ -1,17 +1,11 @@
 listaDaEntrada =[int(numero) for numero in input().split()]
-x = sorted(listaDaEntrada)
 soma = 0
 
-while listaDaEntrada != x :
-    for elemento in listaDaEntrada:
-        if elemento == listaDaEntrada[-1]:
-            break
-        if elemento > listaDaEntrada[listaDaEntrada.index(elemento)+1]:
-            z = listaDaEntrada[listaDaEntrada.index(elemento)+1]
-            listaDaEntrada[listaDaEntrada.index(elemento)+1]= elemento
-            listaDaEntrada[listaDaEntrada.index(elemento)]=z 
+n = len(listaDaEntrada)
+for i in range(n):
+    for j in range(n - i - 1):
+        if listaDaEntrada[j] > listaDaEntrada[j+1]:
+            listaDaEntrada[j], listaDaEntrada[j+1] = listaDaEntrada[j+1], listaDaEntrada[j]
             soma += 1
-        else:
-            soma += 0
 
 print(soma)
