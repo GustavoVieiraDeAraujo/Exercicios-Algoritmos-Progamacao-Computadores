@@ -18,14 +18,15 @@ while y > 0:
     y-=1
 
 for elemento_1 in listaJ:
-    pagar = 0
+    encontrado = False
     z = elemento_1[0]
     for elemento_2 in listaF:
-        if z in elemento_2:
+        if z == elemento_2[0]:
             pagar = float(elemento_1[1])*float(elemento_2[1])
             total += pagar
+            encontrado = True
             break
-    if pagar == 0:
+    if not encontrado:
         print(z+" esta em falta")
 
 print(f"{total:.2f}")
